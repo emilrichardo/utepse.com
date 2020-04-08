@@ -18,16 +18,9 @@
 
           <div class="page-title text-center ">
          
-            <h1 class="font-weight-light mt-3"><?php the_title(); ?></h1>
+            <h1 class="font-weight-light mt-3 display-4"><?php the_title(); ?></h1>
 
-            <p>
-              <small class="text-secondary text-uppercase">
-                - <span class="mes"><?php the_time('d'); ?> de <?php the_time('F'); ?></span> de 
-              <span class="anio"><?php the_time('Y'); ?></span> -
-            </small>
-            </p>
-
-
+           <p><small class="text-secondary text-uppercase">- <span><?php the_time('d'); ?> </span> <span><?php the_time('M'); ?> </span><span><?php the_time('Y'); ?></span> -</small></p>
             
           </div>
           
