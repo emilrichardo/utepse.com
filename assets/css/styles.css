@@ -114,15 +114,9 @@ section.beneficios{
     padding-bottom: 75px;;
 }
 
-.image-service{
-    width: 140px;
-    height: 140px;
-    border-radius: 300px;
-    overflow: hidden;
-    position: relative;
+section.beneficios .card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.modal-service:hover{
-    transform: scale(1.5); 
-    opacity: .8;
-}
