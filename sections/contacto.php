@@ -8,27 +8,9 @@
                                 <h3 class="font-script display-3">Consultas y reclamos</h3>
                             </div>
                             <div class="row justify-content-center">
-                                <div class="col-11 col-md-8">
-                                    <form>
-                                        <div class="form-group">
-                                          <label for="exampleFormControlInput1">Nombre y apellido</label>
-                                          <input type="text" class="form-control " id="exampleFormControlInput1" placeholder="Nombre y Apellido">
-                                        </div>
-        
-                                        <div class="form-group">
-                                            <label for="exampleFormControlInput2">Asunto</label>
-                                            <input type="text" class="form-control " id="exampleFormControlInput2" placeholder="Esciba un asunto">
-                                          </div>
-                                        
-                                        
-                                        <div class="form-group">
-                                          <label for="exampleFormControlTextarea1">Consulta</label>
-                                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                        </div>
-
-                                        <div class="btn btn-primary">Enviar</div>
-                                      </form>
-                                </div>
+                                
+                                 <?php echo do_shortcode( '[contact-form-7 id="81" title="Contacto"]' ); ?>   
+                                
                             </div>
                             
                         </div>

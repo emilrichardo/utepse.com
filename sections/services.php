@@ -1,7 +1,5 @@
 <!--  MARCKUP DE BENEFICIOS-->
 
-
-
 <?php query_posts( array(
         
      
@@ -25,9 +23,9 @@
                     <?php while ( have_posts() ) : the_post(); ?> 
                       <div class="col-6 col-md-4 mb-4">
                         <div class="card shadow">
-                            <div class="card-body py-2">
+                            <div class="card-body px-2 py-1">
                                   <div class="row justify-content-start align-items-center">
-                                      <div class="col-5"> 
+                                      <div class="col-5 p-0"> 
                                         <img><?php the_post_thumbnail('thumbnail', ['class'=>'three-columns', 'class' => 'rounded-circle']); ?>
                                         </img>
                                       </div> 
@@ -39,45 +37,12 @@
                                        </div>   
                                   </div>      
                             </div>
-                          </div>  
+                        </div>  
                        </div>
                     <?php endwhile; // end of the loop. ?>    
-                    </div>
+                      </div>
                 <?php } ?>    
             </div>
         </div>
-    </section>
 
-<!-- Modals   ---------------------------------->
-
-
-<?php query_posts( array(
-        
-     
-        'posts_per_page' => 20,
-        'orderby' => 'date',
-        'post_type' => 'beneficios',           
-        
-    ) ); ?>
-
-<?php   if ( have_posts() ) { ?> 
- <?php while ( have_posts() ) : the_post(); ?>   
-  <div class="modal fade" id="services-<?php echo get_the_ID()  ?>" tabindex="-1" role="dialog" aria-labelledby="services-<?php echo get_the_ID()  ?>Label" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="services-<?php echo get_the_ID()  ?>Label"><?php the_title(); ?></h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
- 
-          <?php the_content(); ?>
-        </div>
-      </div>   
-    </div>
-  </div>
-  <?php endwhile; // end of the loop. ?>    
-<?php } ?>
-<!-- -- >
+</section>
