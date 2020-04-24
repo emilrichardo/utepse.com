@@ -22,6 +22,13 @@
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Damion&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Damion|Raleway:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800&display=swap" rel="stylesheet">
+
+
+
+    <link href="https://vjs.zencdn.net/7.7.5/video-js.css" rel="stylesheet" />
+
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
  
    
 </head>
@@ -63,49 +70,10 @@
         <a href="#servicios" class="btn btn-lg btn-primary">Beneficios Gratuitos</a>        
     </section>
 
-    <section class="comunicado">
-        <div class="container">
-            <div class="jumbotron comunicado-utepse bg-warning text-black pl-lg- shadow-lg">
 
-                <div class="row align-items-stretch">
-                    <div class="col-12 col-md-8">
-                        <h2 class="display-4 text-black">Comunicado</h2>
-                        <div class="card bg-warning">
-                            <div class="card-body">
-                                <p class="h4">Se comunica que debido a la Emergencia Sanitaria (cuarentena) la Junta electoral de UTEPSE continua trabajando mediante los medios tecnológicos disponibles y el proceso electoral sigue desarrollando con total normalidad.</p>
-                            </div>                            
-                        </div>
-                        <h5 class="h6 mt-3">
-                            <span class="font-weight-bolder">Junta Electoral de UTEPSE</span><br>
-                            Firma: Dra Natalia Ibieta Presidenta, Lorena Suarez Vocal, Gregorio Gerez Vocal
-                        </h5>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        
-        
-                        <div class="alert alert-primary h-100 p-lg-4">
-                            <p class="h4 text-warning">Por cualquier consulta comunicarse:</p>
-                            <h5 class="h3 text-white">Dra Natalia Ibieta </h5>
-                            <ul>
-                                <li>Celular: 3855134827 </li>
-                                <li>Correo Electrónico: juntaelectoralutepse@gmail.com</li>
-                            </ul>
-                            
-                                
-                                 
-                                
-                                
-                            
-                        </div>
-                    </div>
-                </div>
-                
-                
-               
-                
-            </div>
-        </div>
-    </section>
+    
+
+    
 
     <section class="notices">
         <div class="new-primary">
@@ -130,6 +98,33 @@
                 </div>
             </div>
         </div>
+        <section class="video bg-white py-5 shadow">
+    	<div class="container">
+    		<div class="row justify-content-center align-items-center ">
+    			<div class="col-md-6">
+    				<h2 class="display-4">¡Quedate en Casa, pero si sales usá barbijo!</h2>
+    				<p class="lead">Para terminar rápido con la cuarentena es indispensable que nos cuidemos entre todos. Por eso no salgas. Pero cuando vayas a comprar alimentos o medicamentos, usá un barbijo, hacelo en tu hogar, en familia, dale el ejemplo a tus hijos. Cuidate, cuidalos, cuidémonos entre todos!</p>
+    			</div>
+    			<div class="col-md-5">
+    				<video
+					    id="my-video"
+					    class="video-js shadow "
+					    controls
+					    preload="auto"
+					    width="440"
+					    height="364"
+					    poster="./images-statics/poster.jpg"
+    					data-setup="{}"
+					  >
+					    <source src="./images-statics/video.mp4" type="video/mp4" />
+					   
+					    
+					  </video>
+    			</div>
+    		</div>
+    	</div>
+    	
+    </section>
 
         <div class="new-secondary ">
             <div class="row no-gutters">
@@ -214,6 +209,49 @@
 
         <div class=" d-none footer-news text-center mt-5">
             <a href="#" class="btn btn-outline-primary">Ver más publicaciones</a>
+        </div>
+    </section>
+    <section class="comunicado mt-5 d-none">
+        <div class="container">
+            <div class="jumbotron comunicado-utepse bg-warning text-black pl-lg- shadow-lg">
+
+                <div class="row align-items-stretch">
+                    <div class="col-12 col-md-8">
+                        <h2 class="display-4 text-black">Comunicado</h2>
+                        <div class="card bg-warning">
+                            <div class="card-body">
+                                <p class="h4">Se comunica que debido a la Emergencia Sanitaria (cuarentena) la Junta electoral de UTEPSE continua trabajando mediante los medios tecnológicos disponibles y el proceso electoral sigue desarrollando con total normalidad.</p>
+                            </div>                            
+                        </div>
+                        <h5 class="h6 mt-3">
+                            <span class="font-weight-bolder">Junta Electoral de UTEPSE</span><br>
+                            Firma: Dra Natalia Ibieta Presidenta, Lorena Suarez Vocal, Gregorio Gerez Vocal
+                        </h5>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        
+        
+                        <div class="alert alert-primary h-100 p-lg-4">
+                            <p class="h4 text-warning">Por cualquier consulta comunicarse:</p>
+                            <h5 class="h3 text-white">Dra Natalia Ibieta </h5>
+                            <ul>
+                                <li>Celular: 3855134827 </li>
+                                <li>Correo Electrónico: juntaelectoralutepse@gmail.com</li>
+                            </ul>
+                            
+                                
+                                 
+                                
+                                
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+               
+                
+            </div>
         </div>
     </section>
     <section class="institucion mt-5">
@@ -852,6 +890,6 @@ Todos los derechos reservados.
   <script src="./js/scripts/components.min.js"></script>
   <script src="./js/vendors.min.js"></script>
   
-
+<script src="https://vjs.zencdn.net/7.7.5/video.js"></script>
 </body>
 </html>
