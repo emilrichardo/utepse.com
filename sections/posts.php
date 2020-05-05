@@ -145,7 +145,7 @@ $vermas               = get_field( 'btn_vermas' );
                 </div>
                 <div class="<?php echo esc_attr($columns_2 . ' ' . 'd-flex order-md-1') ?>">
                     <div class="caption caption-overlay bg-light align-self-end">
-                        <h4 class="h5 font-weight-bolder text-muted">Prevención</h4>
+                        <h4 class="h5 font-weight-bolder text-muted"></h4>
                         <h3 class="h2 font-weight-bolder"><?php the_title(); ?></h3>
                         <p><small class="smoth"><span><?php the_time('d'); ?> </span> <span><?php the_time('M'); ?> </span><span><?php the_time('Y'); ?></span></small></p>
                          <?php  if ( $vermas ) {  ?>
@@ -235,7 +235,7 @@ $vermas               = get_field( 'btn_vermas' );
             </div>
             <div class="<?php echo esc_attr($columns_2 . ' ' . 'd-flex') ?>">
                 <div class="caption    align-self-center">
-                    <h4 class="h5 font-weight-bolder text-muted">Prevención</h4>
+                    <h4 class="h5 font-weight-bolder text-muted"></h4>
                     <h3 class="h3 font-weight-bolder"><?php the_title(); ?></h3>
                     <p><small class="smoth"><span><?php the_time('d'); ?> </span> <span><?php the_time('M'); ?> </span><span><?php the_time('Y'); ?></span></small></p>
                      <?php   if ( $vermas ) {  ?>
@@ -310,7 +310,7 @@ $vermas               = get_field( 'btn_vermas' );
         <div class="row no-gutters">
             <div class="<?php echo esc_attr($columns_1 . ' ' . 'd-flex') ?>">
                 <div class="caption align-self-center">
-                    <h4 class="h5 font-weight-bolder text-muted">Prevención</h4>
+                    <h4 class="h5 font-weight-bolder text-muted"></h4>
                     <h3 class="h3 font-weight-bolder"><?php the_title(); ?></h3>
                     <p><small class="smoth"><span><?php the_time('d'); ?> </span> <span><?php the_time('M'); ?> </span><span><?php the_time('Y'); ?></span></small></p>
                     <?php if ( $vermas ) {  ?>
@@ -398,7 +398,7 @@ $vermas               = get_field( 'btn_vermas' );
             </div>
             <div class="<?php echo esc_attr($columns_2 . ' ' . 'd-flex') ?>">
                 <div class="caption    align-self-center">
-                    <h4 class="h5 font-weight-bolder text-muted">Prevención</h4>
+                    <h4 class="h5 font-weight-bolder text-muted"></h4>
                     <h3 class="h3 font-weight-bolder"><?php the_title(); ?></h3>
                     <p><small class="smoth"><span><?php the_time('d'); ?> </span> <span><?php the_time('M'); ?> </span><span><?php the_time('Y'); ?></span></small></p>
                      <?php  if ( $vermas ) {  ?>
@@ -444,15 +444,15 @@ $vermas               = get_field( 'btn_vermas' );
                         <div class="col-12 col-md-10">
                             <div class="row">
                                 <div class="col-12 col-md-6">
-                                    <div class="img-container bg-primary">
+                                    <div class="img-container">
                                         <div class="inner">
-                                            <?php the_post_thumbnail('large', ['class' => 'card-img']); ?>
+                                            <?php the_post_thumbnail('medium', ['class' => 'card-img']); ?>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6 d-flex">
                                     <div class=" bg-light caption  align-self-center ">
-                                        <h4 class="h5 font-weight-bolder text-muted">Institucional</h4>
+                                        <h4 class="h5 font-weight-bolder text-muted"></h4>
                                         <h3 class="h2 font-weight-bolder"><?php the_title(); ?></h3>
                                         <p><small class="smoth"><span><?php the_time('d'); ?> </span> <span><?php the_time('M'); ?> </span><span><?php the_time('Y'); ?></span></small></p>
                                         <p class="lead"><?php the_excerpt(); ?></p>
@@ -487,13 +487,15 @@ $vermas               = get_field( 'btn_vermas' );
         <div class="row align-items-start">
         <?php while ( have_posts() ) : the_post(); ?>
             <div class="col-12 col-md-4 d-flex">
-                        <div class="caption bg-light   align-self-center">
-                            <h4 class="h5 font-weight-bolder text-muted">Institucional</h4>
-                            <h3 class="h3 font-weight-bolder"><?php the_title(); ?></h3>
-                            <p><small class="smoth"><span><?php the_time('d'); ?> </span> <span><?php the_time('M'); ?> </span><span><?php the_time('Y'); ?></span></small></p>
-                            <p class="lead"><?php the_excerpt(); ?></p>
-                            <a  class="btn btn-outline-primary" href="<?php the_permalink(); ?>" data-toggle="modal">Ver más</a>
-                        </div>
+                <div class="caption bg-light   align-self-center">
+                    <div>
+                       <?php the_post_thumbnail('medium', ['class' => 'card-img']); ?>                       
+                    </div>
+                    <h4 class="h5 font-weight-bolder text-muted"></h4>
+                    <h3 class="h3 font-weight-bolder"><?php the_title(); ?></h3>
+                    <p><small class="smoth"><span><?php the_time('d'); ?> </span> <span><?php the_time('M'); ?> </span><span><?php the_time('Y'); ?></span></small></p>
+                    <a  class="btn btn-outline-primary" href="<?php the_permalink(); ?>" data-toggle="modal">Ver más</a>
+                </div>
         </div>     
         <?php endwhile; // end of the loop. ?>    
     </div>
