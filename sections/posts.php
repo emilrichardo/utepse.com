@@ -110,7 +110,7 @@ $vermas               = get_field( 'btn_vermas' );
              $text_style_img = '' ;   
         }
     // Variable $img_center  
-        $text_img_center = $img_center ? 'inner' : '';  
+        $text_img_center = $img_center ? 'inner' : 'img-normal';  
 
     // Variable $colums
         if ( $columns == "half" ) { // 50-50
@@ -204,7 +204,7 @@ $vermas               = get_field( 'btn_vermas' );
         } else  {
              $text_style_img = '' ; }
     // Variable $img_center  
-        $text_img_center = $img_center ? 'inner' : '';  
+        $text_img_center = $img_center ? 'inner' : 'img-normal';  
     // Variable $colums
         if ( $columns == "half" ) { // 50-50
             $columns_1 = 'col-12 col-md-6' ; 
@@ -285,7 +285,7 @@ $vermas               = get_field( 'btn_vermas' );
         } else  {
              $text_style_img = '' ;}
     // Variable $img_center  
-        $text_img_center = $img_center ? 'inner' : '';    
+        $text_img_center = $img_center ? 'inner' : 'img-normal';    
 
     // Variable $colums
         if ( $columns == "half" ) { // 50-50
@@ -367,7 +367,7 @@ $vermas               = get_field( 'btn_vermas' );
         } else  {
              $text_style_img = '' ; }
     // Variable $img_center  
-        $text_img_center = $img_center ? 'inner' : '';  
+        $text_img_center = $img_center ? 'inner' : 'img-normal';  
     // Variable $colums
         if ( $columns == "half" ) { // 50-50
             $columns_1 = 'col-12 col-md-6' ; 

@@ -74,6 +74,12 @@ section.notices{
     			
   }
 
+
+  .img-normal img{
+    max-width: 100%;
+    height: auto;
+  }
+
   .op-50{
     opacity: .5;
   }
