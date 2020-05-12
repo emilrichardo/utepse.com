@@ -105,9 +105,11 @@ $vermas               = get_field( 'btn_vermas' );
 
         if ( $style_img == "op_50" ) {
             $text_style_img = 'op-50' ; 
+            $text_style_container = 'bg-primary';
            
         } else  {
-             $text_style_img = '' ;   
+             $text_style_img = '' ;  
+             $text_style_container = ''; 
         }
     // Variable $img_center  
         $text_img_center = $img_center ? 'inner' : 'img-normal';  
@@ -136,8 +138,8 @@ $vermas               = get_field( 'btn_vermas' );
                 <h2 class="display-1 text-center text-warning font-weight-bolder">COVID-19</h2>
             </div -->
             <div class="row no-gutters">            
-                <div class="<?php echo esc_attr($columns_1 . ' ' . 'order-md-2') ?>">                
-                    <div class="img-container bg-primary">
+                <div class="<?php echo esc_attr($columns_1 . ' ' . 'order-md-2') ?>">        
+                    <div class="<?php echo esc_attr($text_style_container . ' ' . 'img-container') ?>"> 
                         <div class="<?php echo esc_attr($text_style_img . ' ' . $text_img_center) ?>">
                            <?php the_post_thumbnail('large'); ?>
                         </div>
@@ -155,10 +157,13 @@ $vermas               = get_field( 'btn_vermas' );
                              <style>
                                  @media (min-width: 768px){
                                     .caption-overlay{ 
-                                        margin-top: 200px;      
+                                        margin-top: 200px;   
+                                        position: relative;
+                                        left: 100px ;   
                                     } 
                                 }
-                             </style>
+                        
+                          </style>
 
                          <?php } else {?>
                              <p><?php the_content(); ?></p>
@@ -198,11 +203,14 @@ $vermas               = get_field( 'btn_vermas' );
 
 <?php
     // Variable $style_img
-        if ( $style_img == "op_50" ) {
+      if ( $style_img == "op_50" ) {
             $text_style_img = 'op-50' ; 
+            $text_style_container = 'bg-primary';
            
         } else  {
-             $text_style_img = '' ; }
+             $text_style_img = '' ;  
+             $text_style_container = ''; 
+        }
     // Variable $img_center  
         $text_img_center = $img_center ? 'inner' : 'img-normal';  
     // Variable $colums
@@ -227,7 +235,7 @@ $vermas               = get_field( 'btn_vermas' );
 <div class="new-secondary bg-white">
         <div class="row no-gutters">
              <div class="<?php echo esc_attr($columns_1) ?>">
-                <div class="img-container bg-primary">
+                <div class="<?php echo esc_attr($text_style_container . ' ' . 'img-container') ?>"> 
                     <div class="<?php echo esc_attr($text_style_img . ' ' . $text_img_center) ?>">
                         <?php the_post_thumbnail('large', ['class' => 'card-img']); ?>
                     </div>
@@ -279,11 +287,14 @@ $vermas               = get_field( 'btn_vermas' );
 <?php
     // Variable $style_img
 
-        if ( $style_img == "op_50" ) {
+         if ( $style_img == "op_50" ) {
             $text_style_img = 'op-50' ; 
+            $text_style_container = 'bg-primary';
            
         } else  {
-             $text_style_img = '' ;}
+             $text_style_img = '' ;  
+             $text_style_container = ''; 
+        }
     // Variable $img_center  
         $text_img_center = $img_center ? 'inner' : 'img-normal';    
 
@@ -322,7 +333,7 @@ $vermas               = get_field( 'btn_vermas' );
                 </div>
             </div>
             <div class="<?php echo esc_attr($columns_2) ?>">
-                <div class="img-container bg-primary">
+                <div class="<?php echo esc_attr($text_style_container . ' ' . 'img-container') ?>"> 
                     <div class="<?php echo esc_attr($text_style_img . ' ' . $text_img_center) ?>">
                         <?php the_post_thumbnail('large', ['class' => 'card-img']); ?>
                     </div>
@@ -363,9 +374,12 @@ $vermas               = get_field( 'btn_vermas' );
     // Variable $style_img
         if ( $style_img == "op_50" ) {
             $text_style_img = 'op-50' ; 
+            $text_style_container = 'bg-primary';
            
         } else  {
-             $text_style_img = '' ; }
+             $text_style_img = '' ;  
+             $text_style_container = ''; 
+        }
     // Variable $img_center  
         $text_img_center = $img_center ? 'inner' : 'img-normal';  
     // Variable $colums
@@ -390,7 +404,7 @@ $vermas               = get_field( 'btn_vermas' );
 <div class="new-secondary bg-white">
         <div class="row no-gutters">
              <div class="<?php echo esc_attr($columns_1) ?>">
-                <div class="img-container bg-primary">
+                <div class="<?php echo esc_attr($text_style_container . ' ' . 'img-container') ?>"> 
                     <div class="<?php echo esc_attr($text_style_img . ' ' . $text_img_center) ?>">
                         <?php the_post_thumbnail('large', ['class' => 'card-img']); ?>
                     </div>

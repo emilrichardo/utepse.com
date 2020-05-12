@@ -78,6 +78,8 @@ section.notices{
   .img-normal img{
     max-width: 100%;
     height: auto;
+    min-height: 100%;
+    width: auto;
   }
 
   .op-50{
@@ -91,11 +93,7 @@ section.notices{
         padding:70px 95px;
         z-index: 2;        
     }
-    .caption-overlay{        
-        position: relative;
-        left: 100px;  
-           
-    } 
+   
     .img-container{
         min-height: 400px;     
     }
