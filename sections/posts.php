@@ -152,7 +152,7 @@ $vermas               = get_field( 'btn_vermas' );
                         <p><small class="smoth"><span><?php the_time('d'); ?> </span> <span><?php the_time('M'); ?> </span><span><?php the_time('Y'); ?></span></small></p>
                          <?php  if ( $vermas ) {  ?>
                              <p class="lead"><?php the_excerpt(); ?></p>
-                             <a class="btn btn-outline-primary" href="<?php the_permalink(); ?>" data-toggle="modal" >Ver más</a>
+                             <a class="btn btn-outline-primary" href="<?php the_permalink(); ?>" >Ver más</a>
 
                              <style>
                                  @media (min-width: 768px){
@@ -248,7 +248,7 @@ $vermas               = get_field( 'btn_vermas' );
                     <p><small class="smoth"><span><?php the_time('d'); ?> </span> <span><?php the_time('M'); ?> </span><span><?php the_time('Y'); ?></span></small></p>
                      <?php   if ( $vermas ) {  ?>
                         <p class="lead"><?php the_excerpt(); ?></p>
-                        <a  class="btn btn-outline-primary" href="<?php the_permalink(); ?>" data-toggle="modal">Ver más</a>
+                        <a  class="btn btn-outline-primary" href="<?php the_permalink(); ?>">Ver más</a>
                      <?php } else { ?>
                         <p><?php the_content(); ?></p>
                      <?php } ?>
@@ -326,7 +326,7 @@ $vermas               = get_field( 'btn_vermas' );
                     <p><small class="smoth"><span><?php the_time('d'); ?> </span> <span><?php the_time('M'); ?> </span><span><?php the_time('Y'); ?></span></small></p>
                     <?php if ( $vermas ) {  ?>
                       <p class="lead"><?php the_excerpt(); ?></p>
-                      <a class="btn btn-outline-primary" href="<?php the_permalink(); ?>" data-toggle="modal">Ver más</a>
+                      <a class="btn btn-outline-primary" href="<?php the_permalink(); ?>">Ver más</a>
                      <?php } else { ?>
                       <p><?php the_content(); ?></p>
                      <?php } ?>
@@ -417,7 +417,7 @@ $vermas               = get_field( 'btn_vermas' );
                     <p><small class="smoth"><span><?php the_time('d'); ?> </span> <span><?php the_time('M'); ?> </span><span><?php the_time('Y'); ?></span></small></p>
                      <?php  if ( $vermas ) {  ?>
                          <p class="lead"><?php the_excerpt(); ?></p>
-                         <a class="btn btn-outline-primary" href="<?php the_permalink(); ?>" data-toggle="modal">Ver más</a>
+                         <a class="btn btn-outline-primary" href="<?php the_permalink(); ?>">Ver más</a>
                      <?php } else { ?>
                         <p><?php the_content(); ?></p>
                      <?php } ?>
@@ -470,7 +470,7 @@ $vermas               = get_field( 'btn_vermas' );
                                         <h3 class="h2 font-weight-bolder"><?php the_title(); ?></h3>
                                         <p><small class="smoth"><span><?php the_time('d'); ?> </span> <span><?php the_time('M'); ?> </span><span><?php the_time('Y'); ?></span></small></p>
                                         <p class="lead"><?php the_excerpt(); ?></p>
-                                        <a class="btn btn-outline-primary" href="<?php the_permalink(); ?>" data-toggle="modal">Ver más</a>
+                                        <a class="btn btn-outline-primary" href="<?php the_permalink(); ?>">Ver más</a>
                                     </div>
                                 </div>
                             </div>
@@ -508,7 +508,7 @@ $vermas               = get_field( 'btn_vermas' );
                     <h4 class="h5 font-weight-bolder text-muted"></h4>
                     <h3 class="h3 font-weight-bolder"><?php the_title(); ?></h3>
                     <p><small class="smoth"><span><?php the_time('d'); ?> </span> <span><?php the_time('M'); ?> </span><span><?php the_time('Y'); ?></span></small></p>
-                    <a  class="btn btn-outline-primary" href="<?php the_permalink(); ?>" data-toggle="modal">Ver más</a>
+                    <a  class="btn btn-outline-primary" href="<?php the_permalink(); ?>">Ver más</a>
                 </div>
         </div>     
         <?php endwhile; // end of the loop. ?>    
