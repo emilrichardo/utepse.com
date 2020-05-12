@@ -1,10 +1,16 @@
 <?php get_header(); ?><!-- HEADER ########################-->  
 
 <div class="margin-body"  data-spy="affix" data-offset-top="90"></div>
+ 
 
 
   <div class="container">
-
+ <ol class="breadcrumb my-3 text-uppercase d-flex align-items-center" typeof="BreadcrumbList" vocab="https://schema.org/">
+    <?php if(function_exists('bcn_display'))
+    {
+        bcn_display();
+    }?>
+</ol>
 
   
       <div class="row text-center justify-content-center">

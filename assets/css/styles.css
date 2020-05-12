@@ -15,6 +15,32 @@ body{
 
 
 
+/*single*/
+
+.breadcrumb {
+    
+    font-size: 14px;
+}
+
+.breadcrumb li:last-child{
+  word-wrap: break-word;
+  text-overflow:ellipsis;
+  white-space:nowrap; 
+  overflow:hidden;
+  max-width: 200px; 
+}
+
+
+
+.breadcrumb li a{
+    color: #999
+}
+
+.bread_crumb li:last-child:after {
+    content : '';
+}
+
+
 /*fonts*/
 .font-script{
     font-family: 'Damion', cursive;

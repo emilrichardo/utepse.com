@@ -8,7 +8,13 @@
 
 
   <div class="container">
-
+ 
+ <ol class="breadcrumb my-2  d-flex align-items-center" typeof="BreadcrumbList" vocab="https://schema.org/">
+    <?php if(function_exists('bcn_display'))
+    {
+        bcn_display();
+    }?>
+</ol>
   
     
     <div class="row justify-content-center">
