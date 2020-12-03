@@ -40,6 +40,9 @@
                         <a href="#servicios">Servicios</a>
                     </li>
                     <li>
+                        <a href="<?php echo get_home_url(); ?>/category/noticias/">Noticias</a>
+                    </li> 
+                    <li>
                         <a href="#contacto">Contacto</a>
                     </li>                    
                 </ul>
