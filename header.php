@@ -38,11 +38,11 @@
                 <ul class="nav mr-4 font-weight-bold d-none d-md-flex">                    
                     <li class="mx-3">
                         <a href="#servicios">Servicios</a>
-                    </li  class="mx-3>
+                    </li>
                     <li>
                         <a href="<?php echo get_home_url(); ?>/category/noticias/">Noticias</a>
                     </li> 
-                    <li>
+                    <li  class="mr-3">
                         <a href="#contacto">Contacto</a>
                     </li>                    
                 </ul>
